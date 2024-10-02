@@ -1,3 +1,4 @@
+// Syarif Hidayat_D400220086_Kelas A //
 const int led  = 13;
 String code;
 void setup() {
@@ -18,6 +19,7 @@ void loop() {
     Serial.println("LED MATI");
     code = "";
   }
+  // Syarif Hidayat_D400220086_Kelas A //
   else if (code == "kedip") {
     Serial.println("LED BERKEDIP");
     while (true) {

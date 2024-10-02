@@ -1,3 +1,4 @@
+// Syarif Hidayat_D400220086_Kelas A //
 #include <SoftwareSerial.h>
 SoftwareSerial Rxserial(10, 11);
 char val;
@@ -14,6 +15,7 @@ void loop() {
     Serial.println(val);
     digitalWrite(led, HIGH);
   }
+  // Syarif Hidayat_D400220086_Kelas A //
   else if (val == '0') {
     Serial.println(val);
     digitalWrite(led, LOW);

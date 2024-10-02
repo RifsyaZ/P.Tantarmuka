@@ -1,8 +1,4 @@
-//PRAKTIKUM ANTARMUKA 2023/2024
-//MODUL 1
-//PERCOBAAN 2
-//SERIAL KOMUNIKASI SATU ARAH ARDUINO DENGAN ARDUINO
-(Tx / MASTER)
+// Syarif Hidayat_D400220086_Kelas A //
 #include <SoftwareSerial.h>
 const int button = 7;
 int code;
@@ -21,5 +17,6 @@ void loop() {
     Txserial.write("0");
     Serial.println("LED MATI");
   }
+  // Syarif Hidayat_D400220086_Kelas A //
   delay(500);
 }

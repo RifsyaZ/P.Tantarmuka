@@ -1,3 +1,4 @@
+// Syarif Hidayat_D400220086_Kelas A //
 #include <SPI.h>
 #define LEDpin 7
 #define buttonpin 2
@@ -14,13 +15,11 @@ void setup() {
   received = false;
   SPI.attachInterrupt();
 }
-
 ISR(SPI_STC_vect)
 {
   Slavereceived = SPDR;
   received = true;
 }
-
 void loop() {
   if (received)
   {
@@ -31,6 +30,7 @@ void loop() {
       digitalWrite(LEDpin, LOW);
       Serial.println("Slave LED OFF");
     }
+    // Syarif Hidayat_D400220086_Kelas A //
     buttonvalue = digitalRead(buttonpin);
     if (buttonvalue == LOW)
     {
