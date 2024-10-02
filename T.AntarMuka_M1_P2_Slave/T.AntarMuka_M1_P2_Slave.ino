@@ -1,5 +1,7 @@
 #include <SoftwareSerial.h>
-#include "var.h"
+SoftwareSerial Rxserial(10, 11);
+char val;
+const int led = 13;
 void setup() {
   Rxserial.begin(9600);
   pinMode(13, OUTPUT);

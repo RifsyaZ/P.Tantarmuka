@@ -1,4 +1,5 @@
-#include "var.h"
+const int led  = 13;
+String code;
 void setup() {
   Serial.begin(9600);
   pinMode(led, OUTPUT);
